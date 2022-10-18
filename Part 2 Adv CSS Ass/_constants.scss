@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$basic: #c3cfe2;
+$background: #9b3e5f;
+$button: rgb(63, 62, 62);
+
+$radius: 5px;
+
+$transition: 400ms ease;
+
+$breakpoints: (
+    "medium-screen": 600px,
+    "large-screen": 1025px
+);
+
+body {
+    background-color: $basic;
+}
+
+@mixin basic-styles {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@mixin basic-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+}
+

@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$font:'Open Sans', sans-serif;
+$color-body: #c3cfe2;     
+$color-main:#fff;
+$colortext-main: rgb(95, 93, 93);
+$colortext-footer: #ffff;
+$color-footer: #686de0;
+$colortext2: #c7c9fc;
+$shadow: #abb0b8;
+
+@mixin style {
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px;
+    font-family: $font;
+    font-weight: bolder;
+    font-size: 23px;
+    line-height: 2em;
+    border-style: none;
+    box-shadow: 0px 5px 20px $shadow;
+}

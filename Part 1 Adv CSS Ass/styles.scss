@@ -1,0 +1,52 @@
+@import "./constants";
+
+body {
+    background-color: $color-body;
+}
+
+.main {
+    @include style();
+    margin-top: 20px;
+    color: $colortext-main;
+    background-color: $color-main;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-bottom: 100px;
+    &__portrait {
+        position: absolute;
+        transform: translate(120px, 25px);
+        }
+        & img {
+            display: block;
+            border-style: solid;
+            border-width: 6px;
+            border-radius: 50%;
+            border-color: $color-main;
+            width: 140px;
+            height: 140px; 
+            }     
+    }
+
+.footer {
+    @include style();
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: $colortext-footer;
+    line-height: 1.8em;
+    letter-spacing: 3px;
+    background-color: $color-footer;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+        p:first-child{
+            margin-top: 35px;
+            font-size: 24px;
+        }
+        p:nth-child(2) {
+        font-size: 18px;
+        color: $colortext2;
+        letter-spacing: 2px;
+        }
+    }
+    

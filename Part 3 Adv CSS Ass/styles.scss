@@ -1,0 +1,32 @@
+@import "./constants";
+
+
+.laptop::before {
+    content: "\f5fc";  
+    left: 30px;
+    font-family: "Font Awesome 5 Free";    
+    }
+
+.twitter::before {
+    content: "\f099";    
+    left: 35px;
+    font-family: "Font Awesome 5 Brands";
+    }
+
+.linked::before {
+    content: "\f0e1";
+    left: 35px;
+    font-family: "Font Awesome 5 Brands";
+    }
+
+.facebook::before {
+    content: "\f39e";    
+    left: 40px;
+    font-family: "Font Awesome 5 Brands";    
+    }
+
+.github::before {
+    content: "\f09b";    
+    left: 35px;
+    font-family: "Font Awesome 5 Brands";
+    }
